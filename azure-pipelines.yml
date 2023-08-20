@@ -20,6 +20,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps: #linear sequence of operations that make up a job.
+# step could be task or a script or a reference to an external template.
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(build.sourcesDirectory)'
